@@ -7,12 +7,20 @@ body {
 }
 
 .main-container {
-  width: 1120px;
-  padding: 40px;
+  width: 100%;
 }
 
+.navigation-menu {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.content-section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 /* golova */
 .header {
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +31,40 @@ body {
   font-size: 28px;
   border-left: 4px solid #b8ffec;
   padding-left: 15px;
+  padding-top: 10px;
+}
+.header_menu_icon {
+  height: 100%;
+  width: 25%;
+  display: none;
+}
+.header_menu_icon2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  margin-top: 20px;
+  border-right: #999ba245 3px solid;
+}
+.header_menu {
+  width: 300px;
+  height: 88px;
+  display: flex;
+  gap: 10px;
+}
+
+.cps_1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  display: none;
+}
+.cps_1 img {
+  padding-top: 20px;
+}
+
+.tablet-icon {
+  padding-right: 10px;
+  border-right: #999ba245 3px solid;
 }
 
 .header__actions {
@@ -46,6 +88,9 @@ body {
 }
 
 /* nav */
+.navigation-menu {
+  display: none;
+}
 .tabs-list {
   display: flex;
   flex-wrap: wrap;
@@ -61,9 +106,9 @@ body {
   border: 1px solid transparent;
 }
 
-.tabs-list .lupa {
+.tab.active {
   background: #ffffff;
-  border: 2px solid #b8ffec;
+  border: 1px solid #b8ffec;
   border-radius: 6px;
 }
 
@@ -106,4 +151,60 @@ body {
 .arrow {
   color: #41f6d7;
   font-size: 18px;
+}
+/* 768px icon */
+/* .ipad-icon .tablet-icon {
+  display: none;
+} */
+.divider {
+  display: none;
+}
+#check {
+  display: none;
+}
+.ipad-icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header {
+    background-color: #ffffff;
+  }
+  .header__title {
+    display: none;
+  }
+  .ipad-icon {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 180px;
+  }
+  .header__actions {
+    gap: 5px;
+  }
+  .ipad-icon {
+    display: block;
+  }
+  .action-item span {
+    display: none;
+  }
+  .divider {
+    display: block;
+  }
+  .cps_1 {
+    display: block;
+  }
+  .header_menu_icon {
+    display: block;
+  }
+  .navigation-menu {
+    display: block;
+  }
+}
+.divider {
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  border-radius: 1px;
+  flex-shrink: 0;
+  display: none;
 }
