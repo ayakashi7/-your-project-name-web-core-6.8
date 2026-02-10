@@ -7,14 +7,13 @@ body {
   margin: 0;
   width: 100%;
 }
-.main-container {
-  padding: 0 30px;
-}
+
 /* golova */
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 0 24px;
+  box-sizing: border-box;
   align-items: center;
   font-family: "TText";
   height: 88px;
@@ -71,6 +70,7 @@ body {
   flex-wrap: wrap;
   margin-top: 30px;
   font-family: "TText";
+  padding: 0 34px;
 }
 .tab {
   padding: 8px 15px;
@@ -92,6 +92,7 @@ body {
   margin-top: 30px;
   font-family: "TText";
   font-weight: 400;
+  padding: 0 34px;
 }
 .content-text {
   flex: 1;
@@ -192,17 +193,17 @@ body {
 
   /* --- telefon(320px-768px) --- */
   @media (max-width: 768px) {
-    .main-container {
-      padding: 0 15px;
-    }
     .hide-mobile,
     .header__right .tablet-icons,
     .desktop-only {
       display: none;
     }
-
+    .content-text {
+      padding: 0 16px;
+    }
     .content-section {
       flex-direction: column;
+      padding: 0;
     }
 
     .text-wrapper p:last-child {
@@ -220,5 +221,6 @@ body {
   .tabs-list {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding: 0 16px;
   }
 }
