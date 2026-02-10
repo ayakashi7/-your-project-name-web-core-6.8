@@ -1,6 +1,6 @@
 @font-face {
   font-family: "TText";
-  src: url(/TText/TTLakes-Medium.ttf);
+  src: url(./TText/TTLakes-Medium.ttf);
 }
 body {
   background: #f8f8f8;
